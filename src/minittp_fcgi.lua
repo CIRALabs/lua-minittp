@@ -4,7 +4,7 @@
 
 local mt_engine = require 'minittp_engine'
 local copas = require 'copas'
-local json = require 'json'
+local json = require 'mjson'
 
 local _M = {}
 

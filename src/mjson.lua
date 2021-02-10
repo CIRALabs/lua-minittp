@@ -7,7 +7,7 @@
 -- under the terms of the MIT license. See LICENSE for details.
 --
 
-local json = { _version = "0.1.0" }
+local mjson = { _version = "0.1.0" }
 
 -------------------------------------------------------------------------------
 -- Encode
@@ -116,7 +116,7 @@ encode = function(val, stack)
 end
 
 
-function json.encode(val)
+function mjson.encode(val)
   return ( encode(val) )
 end
 
@@ -369,7 +369,7 @@ parse = function(str, idx)
 end
 
 
-function json.decode(str)
+function mjson.decode(str)
   if type(str) ~= "string" then
     error("expected argument of type string, got " .. type(str))
   end
@@ -377,5 +377,5 @@ function json.decode(str)
 end
 
 
-return json
+return mjson
 

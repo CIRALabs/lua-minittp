@@ -14,7 +14,7 @@ local mt_util = require 'minittp_util'
 local mt_io = require 'minittp_io'
 local posix = require 'posix'
 local sys_stat = require "posix.sys.stat"
-local json = require 'json'
+local json = require 'mjson'
 
 local response = {}
 response.__index = response
